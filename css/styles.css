@@ -1,0 +1,86 @@
+:root {
+	--DarkC-900: #011627;
+	--DarkC-700: #122637;
+	
+	--Light-100: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--DarkC-900);
+	color: var(--Light-100);
+	
+	font-family: sans-serif;
+}
+
+main {
+	padding: 6.25rem 5rem;
+}
+
+.challenges-grid {
+	margin-top: 3rem;
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.challenges-grid a {
+	position: relative;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	padding: 1.25rem 2rem;
+	border-radius: 1.25rem;
+	
+	color: var(--Light-100);
+	background: linear-gradient(90deg, var(--DarkC-700) 0%, var(--DarkC-900) 100%);
+	text-decoration: none;
+	
+	transition: all .3s ease;
+	border: 2px solid var(--DarkC-700);
+}
+
+.challenges-grid a:hover {
+	border: 2px solid var(--DarkC-900);
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+	font-weight: 100;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+@media (max-width:992px) {
+	main {
+		padding: 3rem 1.25rem;
+	}
+	
+	.challenges-grid {
+		margin-top: 2rem;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	h1 {
+		font-size: 2rem;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+}
